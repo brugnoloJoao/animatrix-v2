@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #111;
+    color: white;
+}
+
+header{
+    background-color: #1b1b1b;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid crimson;
+}
+
+#titulo{
+    font-size: 3rem;
+}
+
+.titulo_destaque{
+    color: crimson;
+}
+
+.container{
+    width: 100%;
+    padding: 30px;
+}
+
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.card{
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 2px solid transparent;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.conteudo{
+    padding: 20px;
+}
+
+.conteudo h2{
+    margin-bottom: 10px;
+}
+
+.genero{
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+.nota{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.texto{
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.extra{
+    background-color: #2a2a2a;
+    padding: 10px;
+    border-left: 4px solid crimson;
+    border-radius: 5px;
+}
+
+.blur{
+    filter: blur(10px);
+}
+
+.restrito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    background-color: #000;
+    font-size: 1.2rem;
+    color: crimson;
+}
+
+.premium{
+    border: 2px solid gold;
+    box-shadow: 0 0 15px gold;
+}
